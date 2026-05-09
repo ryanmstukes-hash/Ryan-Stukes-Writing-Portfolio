@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Stukes | Writing Portfolio</title>
+    <style>
+        :root {
+            --navy: #1F3864;
+            --gold: #C9A84C;
+            --lgray: #F5F5F5;
+            --mgray: #595959;
+            --black: #1A1A1A;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: #fafafa;
+            color: var(--black);
+            line-height: 1.6;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: var(--navy);
+            border-bottom: 5px solid var(--gold);
+            color: var(--white);
+            padding: 1rem 10%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 4rem 10% 3rem 10%;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .subtitle {
+            color: var(--gold);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero .app-tag {
+            color: #CCCCCC;
+            font-size: 1rem;
+        }
+
+        /* --- Main Layout --- */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: var(--white);
+            padding: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* --- Components --- */
+        .section-label {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+        }
+
+        .section-title {
+            color: var(--navy);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .demonstrates {
+            color: var(--mgray);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        hr.gold-hr {
+            border: 0;
+            height: 2px;
+            background: var(--gold);
+            margin: 1rem 0;
+        }
+
+        .context-box {
+            font-style: italic;
+            color: var(--mgray);
+            font-size: 0.9rem;
+            padding: 1rem;
+            border-left: 3px solid var(--navy);
+            background: #f9f9f9;
+            margin-bottom: 1.5rem;
+        }
+
+        .sub-header {
+            color: var(--navy);
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .pull-quote {
+            font-style: italic;
+            color: var(--navy);
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-left: 2px solid var(--gold);
+            margin: 1.5rem 0;
+        }
+
+        .quote-attribution {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 0.85rem;
+            margin-top: -1rem;
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .content-body {
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        /* --- Sample 03 Specific Boxes --- */
+        .ig-box {
+            background-color: #F8F8F8;
+            border: 1.5px solid #DDDDDD;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .internal-box {
+            background-color: #EEF2F8;
+            border: 1.5px solid var(--navy);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--mgray);
+            font-style: italic;
+            margin-top: -0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--gold);
+            color: var(--mgray);
+            font-size: 0.8rem;
+            background: var(--white);
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 1.5rem; }
+            .hero h2 { font-size: 2rem; }
+            header { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RYAN STUKES</h1>
+    <p>Writing Portfolio — Communications Apprentice Application</p>
+</header>
+
+<div class="hero">
+    <h2>RYAN STUKES</h2>
+    <p class="subtitle">Writing Portfolio</p>
+    <p class="app-tag">Communications Apprentice Application — Movement Mortgage</p>
+    
+    <div style="margin-top: 2rem; max-width: 600px; font-size: 0.95rem; line-height: 1.4; opacity: 0.9;">
+        This portfolio presents three writing samples selected to demonstrate range across long-form structured narrative, community-facing stakeholder communications, and short-form audience-specific content.
+    </div>
+</div>
+
+<div class="container">
+    
+    <!-- SAMPLE 01 -->
+    <div id="sample1">
+        <p class="section-label">Sample 01 — Long-Form</p>
+        <h3 class="section-title">Press Release</h3>
+        <p class="demonstrates">Demonstrates: Structured narrative writing, audience-ready formatting, quote integration, multi-channel campaign storytelling, and mission-driven communications.</p>
+        <hr class="gold-hr">
+        <div class="context-box">
+            Context: Written as the communications deliverable for Rhythm & Roots, a multicultural live music event produced as the practical thesis component at Appalachian State University. Distributed across campus media, arts organizations, and local community partners. The event drew 50+ attendees and generated 18,000+ digital views.
+        </div>
+
+        <p class="sub-header">Appalachian State University Student Brings Africana Music to Downtown Boone in Groundbreaking Cultural Event</p>
+        <p style="font-weight: bold; margin-bottom: 1rem;">Rhythm & Roots: A Celebration of Music, Culture & Community draws 50+ attendees, earns 5-star ratings, and spotlights the untold Black history of the Appalachian region</p>
+
+        <p class="content-body"><strong>BOONE, N.C., April 4, 2025 —</strong> Ryan Stukes, a graduating senior at Appalachian State University, successfully produced and executed Rhythm & Roots: A Celebration of Music, Culture & Community, a live cultural event held at The Happy Persimmon in Downtown Boone as part of the University Honors College's senior thesis program...</p>
+        
+        <div class="pull-quote">
+            "This was an amazing event!!! The atmosphere was so positive and welcoming. I loved seeing a bit into your thesis project — I can tell this is such a passion of yours and that was truly inspiring."
+        </div>
+        <p class="quote-attribution">— Rhythm & Roots Attendee Survey Respondent</p>
+
+        <p class="sub-header">Bringing Underrepresented Voices to the High Country</p>
+        <p class="content-body">Stukes' honors thesis examined the historical lack of visibility and representation of Africana music — encompassing jazz, funk, neo-soul, Afro-Latin, and West African traditions — in the predominantly Appalachian music landscape of Western North Carolina.</p>
+
+        <p class="sub-header">A Multi-Channel Campaign Executed on a Zero-Dollar Budget</p>
+        <p class="content-body">Stukes developed and executed a comprehensive multi-channel campaign including digital flyer distribution across 19 King Street businesses, campus-wide digital signage reaching 140+ screens, and coordinated Instagram co-publishing with event partners.</p>
+    </div>
+
+    <!-- SAMPLE 02 -->
+    <div id="sample2" style="margin-top: 4rem;">
+        <p class="section-label">Sample 02 — Conversational / Internal</p>
+        <h3 class="section-title">Community Stakeholder Update</h3>
+        <p class="demonstrates">Demonstrates: Empathetic stakeholder communications, resource organization, audience sensitivity, and clear calls to action.</p>
+        <hr class="gold-hr">
+        <div class="context-box">
+            Context: Written during the Communications Manager Intern role at Watauga Arts Council in response to Hurricane Helene. Published to the online directory and distributed via email newsletter.
+        </div>
+
+        <p class="sub-header">Supporting High Country Artists: Hurricane Helene Relief Efforts</p>
+        <p class="content-body">In the aftermath of Hurricane Helene, the devastation has deeply impacted our NC High Country community. Our thoughts are with everyone in Western North Carolina as we slowly begin to rebuild. Among those most affected are our local artists, whose contributions are often overlooked in times of crisis.</p>
+
+        <p style="font-weight:bold; margin-top:1rem;">The Hope After Helene Arts Relief Fund</p>
+        <p class="content-body">Watauga Arts Council has released its own initiative in response to Hurricane Helene. Many artists and nonprofit organizations have lost equipment and income. This fund aims to provide critical financial support helping artists recover and continue their work in rebuilding the community.</p>
+        <p style="color: var(--navy); font-weight: bold;">Donate at: givebutter.com/tfol8N</p>
+    </div>
+
+    <!-- SAMPLE 03 -->
+    <div id="sample3" style="margin-top: 4rem;">
+        <p class="section-label">Sample 03 — Short-Form</p>
+        <h3 class="section-title">Campaign Copy: Original + Channel Adaptation</h3>
+        <p class="demonstrates">Demonstrates: Platform-native writing, community activation, and the ability to translate the same message across registers.</p>
+        <hr class="gold-hr">
+        <div class="context-box">
+            Context: Written to promote Rhythm & Roots across Instagram and co-published with event partners. Drives 18,000+ views.
+        </div>
+
+        <p class="sub-header">VERSION A — As Published (Instagram)</p>
+        <div class="ig-box">
+            🎶 Join us for the practical component of Ryan Stukes' thesis at @thehappypersimmon inside Boone's Fly Shop on April 4th, 5–6:30 PM!<br><br>
+            ✨ Live performances by @modalbrew.band and internationally renowned specialist Baba Khalid Saleem.<br><br>
+            🎤 Ryan will also share insights on African diasporic music, exploring its rich history and impact. 🥁🎷
+        </div>
+        <p class="caption">Platform: Instagram | Tone: Conversational, community-first</p>
+
+        <p class="sub-header">VERSION B — Adapted for Internal / Corporate Channel</p>
+        <p class="demonstrates" style="margin-top:0.5rem">Rewritten for an internal communications platform demonstrating voice flexibility.</p>
+        <div class="internal-box">
+            <strong>Event Announcement: Rhythm & Roots — A Celebration of Music, Culture & Community</strong><br><br>
+            We're excited to share an upcoming cultural event produced by one of our own. On April 4th from 5:00–6:30 PM, join us at The Happy Persimmon in Downtown Boone for a live evening of music, storytelling, and community.<br><br>
+            The event features performances by Modal Brew and cultural education by Baba Khalid Saleem. Free and open to the public.
+        </div>
+        <p class="caption">Platform: Internal comms / intranet | Tone: Professional, warm</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>ryanmstukes@gmail.com | linkedin.com/in/ryanmstukes</p>
+    <p style="margin-top: 0.5rem;">Submitted — Communications Apprentice Application, Movement Mortgage</p>
+</footer>
+
+</body>
+</html>
